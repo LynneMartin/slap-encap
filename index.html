@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Slap Game Encapsulated</title>
+</head>
+
+<body>
+  <h1>Mean Girls Fight Club (2)</h1>
+
+          <span>Name:<span id="target-name"> The Plastics</span>
+            <br>
+          
+            <span>Hits: <span id="hits"> 0</span></span>
+            <br>
+            <!--Health Counter-->
+            <span>Health:<span id="health"> 100</span>
+              <!--Health Meter Bar **NOT WORKING**-->
+              <meter id="health-meter" low="0.4" optimum="0.2" high="0.8" value="0.0"></meter>
+              <br>
+          
+              <img src="mean-girls.jpg" width="200"></img>
+          
+              <h3>Choose Your Punishment!</h3>
+          
+              <!--Attack buttons-->
+              <button class="hair-pull-button" onclick="hairPull()">
+                <img class="btn btn-info" src="">
+                <p>Hair Pull</p>
+              </button>
+          
+              <button class="scratch-button" onclick="scratch()">
+                <img class="btn btn-warning" scr="">
+                <p>Scratch</p>
+              </button>
+          
+              <button class="boob-punch" onclick="boobPunch()">
+                <img class="btn btn-danger" src="">
+                <p>Boob Punch</p>
+              </button>
+              <br>
+          
+              <h4>A little extra punishment when they're "literally the worst!"</h4>
+              <!--Modifier buttons **NOT WORKING**-->
+              <button class="kalteen-bar" onclick="addItem('proteinBar')">Kälteen Protein Bar</button>
+          
+              <button class="hairspray" onclick="addItem('hairspray')">Hairspray In Eyes</button>
+          
+              <button class="purse-thwap" onclick="addItem('purse')">Purse Thwap</button>
+          
+              <!-- power up -->
+              <div>
+                <h3>Feeling not-so-fetch?</h3>
+                <button class="hump day treat btn-success" onclick="humpDayTreat()">
+                  <p>Mom's Frozen Margaritas</p>
+                </button>
+              </div>
+              <br>
+          
+              <!--reset button-->
+              <div>
+                <button class="btn-secondary m-1" onClick="reset(0)">Reset</button>
+              </div>
+          
+              </div>
+              </div>
+              </div>
+          
+          
+          
+          
+              <script src="game.js" type="module"></script>
+</body>
+
+</html>
